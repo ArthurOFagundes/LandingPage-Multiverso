@@ -8,6 +8,14 @@
       {
         "link-name": "off"
       }
-    ]
+    ],
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
+      }
+    ],
+    "button-type": "off",
+    "axe/forms": "off"
   }
 }

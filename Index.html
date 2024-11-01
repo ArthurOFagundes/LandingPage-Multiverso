@@ -11,173 +11,346 @@
 <body>
   <!--Header-->
   <header>
-    .<div class="boc-logo-img">
-      <img src="src/LOGO.svg" alt="Logo Multiverso">
+    <div class="box-logo-img">
+      <img class="logo-img" src="src/LOGO.svg" alt="Logo Multiverso.">
+      <p class="brand-name">Teste</p>
+    </div>
+    <div class="box-navbar">
       <nav>
-        <ul>
-          <li><a href="#apresentation">Home</a></li>
-          <li><a href="#about-us">Sobre nós</a></li>
-          <li><a href="#our-services">Serviços</a></li>
-          <li><a href="#our-history">Contato</a></li>
-        </ul>
+        <a href="#apresentation" class="nav-links">Home</a>
+        <a href="#about-us" class="nav-links">Sobre nós</a>
+        <a href="#our-services" class="nav-links">Serviços</a>
       </nav>
-      <div class="box-btn-contact">
-        <button class="box-btn-contact">Contato</button>
-      </div>
+    </div>
+    <div class="box-btn-actions">
+      <button class="btn-action">Contato</button>
+    </div>
   </header>
 
   <!--Main-->
   <main>
-    <section id="apresentation" class="apresentation-section">
+    <section id="apresentation" class="apresentation-section hidden-element">
       <div class="box-text-apresentation">
         <h1>Isso é um teste de<br><strong>desenvolvimento</strong></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis commodi hic, perspiciatis aliquid aperiam
-          quaerat tempora soluta distinctio architecto vero eveniet a, illum sed iure possimus blanditiis totam error
-          culpa.</p>
-        <a href="#contact-us">Iniciar</a>
+        <p>Donec vehicula convallis sodales. Vestibulum ante ipsum<br> primis in faucibus orci luctus et ultrices
+          posuere
+          cubilia<br> curae; Fusce ut porta diam, nec sagittis turpis. Quisque a<br> est et libero lobortis pulvinar in
+          nec
+          felis.</p>
+        <a class="link-action" href="#contact-us">Iniciar</a>
       </div>
       <div class="box-img-apresentation">
-        <img class="image-apresentation" src="src/mobile/rocketIMG.png" alt="Imagem de foguete espacial sendo lançado.">
-        <img class="image-apresentation" src="src/mobile/iPhone X.png" alt="Mockup de um celular Iphone X.">
+        <img class="img-apresentation-orange" src="src/apresentation/Orange Circle.png" alt="">
+        <img class="img-apresentation-purple" src="src/apresentation/Purple Circle.png" alt="">
+        <img class="img-apresentation-turquoise" src="src/apresentation/Turquoise Circle.png" alt="">
+        <img class="img-apresentation-iphone" src="src/apresentation/iPhone X.png" alt="Mockup de um celular Iphone X.">
       </div>
     </section>
 
-    <section id="about-us" class="about-section">
+    <section id="about-us" class="about-section hidden-element translateX-element-left">
       <div class="box-img-about">
-        <img src="src/about/aboutIMG.png" alt="Imagem de mulheres em um escritorio.">
+        <img class="img-about" src="src/about/aboutIMG.png" alt="Imagem de mulheres em um escritorio.">
       </div>
       <div class="box-text-about">
         <h2 class="title">Sobre nós</h2>
-        <p><strong>Donec vehicula convallis sodales.</strong> Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Fusce ut porta diam, nec sagittis turpis. Quisque a est et libero lobortis
-          pulvinar in nec felis. Nulla a orci sodales, vulputate justo ac, tincidunt leo. Aliquam at odio ac velit
-          fermentum sollicitudin. Pellentesque tempus turpis eu dolor fermentum malesuada. Aenean vitae lacinia lectus.
-          Duis aliquet pharetra augue, non tristique felis elementum eu. Aenean aliquet dapibus commodo. Maecenas tempus
-          aliquam est. In hac habitasse platea dictumst.</p>
+        <div class="divider"></div>
+        <p><strong>Donec vehicula convallis sodales.</strong> Vestibulum ante ipsum<br> primis in faucibus orci luctus
+          et
+          ultrices posuere cubilia<br> curae; Fusce ut porta diam, nec sagittis turpis. Quisque a<br> est et libero
+          lobortis
+          pulvinar in nec felis. Nulla a orci<br> sodales, vulputate justo ac, tincidunt leo. Aliquam at odio<br> ac
+          velit
+          fermentum sollicitudin. Pellentesque tempus turpis<br> eu dolor fermentum malesuada. Aenean vitae lacinia<br>
+          lectus.
+          Duis aliquet pharetra augue, non tristique felis<br> elementum eu. Aenean aliquet dapibus commodo.<br>
+          Maecenas tempus
+          aliquam est. In hac habitasse platea<br> dictumst.</p>
     </section>
 
-    <section id="our-services" class="services-section">
+    <section id="our-services" class="services-section hidden-element translateX-element-right">
       <div class="box-text-services">
         <h2 class="title">Nossos serviços</h2>
-        <p>Donec vehicula convallis sodales. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+        <div class="divider"></div>
+        <p>Donec vehicula convallis sodales. Vestibulum ante<br> ipsum primis in faucibus orci luctus.</p>
         <ul class="services-list">
-          <li>
-            <h3 class="sub-title">Marketing de performance</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur iaculis dolor nec pretium cursus.
+          <li class="services-list-item">
+            <div class="services-list-icon">
+              <img src="src/services/TrendingUpOutline.svg" alt="">
+            </div>
+            <div>
+              <h3 class="sub-title">Marketing de performance</h3>Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+              elit.
+              Curabitur iaculis dolor nec pretium cursus.
+            </div>
           </li>
-          <li>
-            <h3 class="sub-title">E-commerce</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            iaculis dolor nec pretium cursus.
+          <li class="services-list-item">
+            <div class="services-list-icon">
+              <img src="src/services/ClipboardList.svg" alt="">
+            </div>
+            <div>
+              <h3 class="sub-title">E-commerce</h3>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit.
+              Curabitur
+              iaculis dolor nec pretium cursus.
+            </div>
+
           </li>
-          <li>
-            <h3 class="sub-title">Produção de conteúdo</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur iaculis dolor nec pretium cursus.
+          <li class="services-list-item">
+            <div class="services-list-icon">
+              <img src="src/services/Cash.svg" alt="">
+            </div>
+            <div>
+              <h3 class="sub-title">Produção de conteúdo</h3>Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+              elit.
+              Curabitur iaculis dolor nec pretium cursus.
+            </div>
           </li>
-          <li>
-            <h3 class="sub-title">Marketing de Infuência</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Curabitur iaculis dolor nec pretium cursus.
+          <li class="services-list-item">
+            <div class="services-list-icon">
+              <img src="src/services/SpeakerphoneOutline.svg" alt="">
+            </div>
+            <div>
+              <h3 class="sub-title">Marketing de Infuência</h3>Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+              elit.
+              Curabitur iaculis dolor nec pretium cursus.
+            </div>
           </li>
         </ul>
       </div>
 
       <div class="box-img-services">
-        <img src="src/services/Image 1.png" alt="Imagem de quadro escrito 'Think outside the box'.">
-        <img src="src/services/Image 2.png" alt="Imagem de um notebook exibindo um dashboard.">
-        <img src="src/services/Image 3.png"
-          alt="Imagem de uma tela de computador exibindo um programa de edição de video.">
-        <img src="src/services/Image 4.png" alt="Imagem de um homem fazem uma apresentação.">
+        <div class="img-services-one-two">
+          <img src="src/services/Image 1.png" alt="Imagem de quadro escrito 'Think outside the box'.">
+          <img src="src/services/Image 2.png" alt="Imagem de um notebook exibindo um dashboard.">
+          <img class="dot-services-item-one" src="src/services/Dot Ornament.svg" alt="">
+
+        </div>
+
+        <div class="img-services-three-four">
+          <img src="src/services/Image 3.png"
+            alt="Imagem de uma tela de computador exibindo um programa de edição de video.">
+          <img src="src/services/Image 4.png" alt="Imagem de um homem fazem uma apresentação.">
+          <img class="dot-services-item-two" src="src/services/Dot Ornament.svg" alt="">
+        </div>
       </div>
     </section>
 
-    <section id="our-history" class="history-section">
+    <section id="our-history" class="history-section hidden-element translateX-element-left">
       <div class="box-img-history">
-        <img src="src/historySucess/historyIMG.png" alt="Grupo de pessoas olhando para um computador.">
+        <div>
+          <img src="src/historySucess/historyIMG.png" alt="Grupo de pessoas olhando para um computador.">
+          <img class="dot-history-item" src="src/services/Dot Ornament.svg" alt="">
+          <div class="retangle-history-img"></div>
+        </div>
       </div>
       <div class="box-text-history">
-        <h2 class="title">
-          Histórias de sucessos
-        </h2>
-        <p>Donec vehicula convallis sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        <h2 class="title"> Histórias de sucesso</h2>
+        <div class="divider"></div>
+        <p>Donec vehicula convallis sodales. Vestibulum ante ipsum<br> primis in faucibus orci luctus et ultrices
+          posuere
           cubili.</p>
 
         <div class="box-counter-history">
           <div class="box-counter-projects">
-            <h3 class="counter-projects"><span class="counter-value">1000</span></h3>
-            <p>Projetos completos</p>
+            <h3 class="counter-h">1000</h3>
+            <p class="counter-p">Projetos completos</p>
           </div>
+
           <div class="box-counter-team">
-            <h3 class="counter-team"><span class="counter-value">235</span></h3>
-            <p>Nosso time</p>
+            <h3 class="counter-h">235</h3>
+            <p class="counter-p">Nosso time</p>
           </div>
+
           <div class="box-counter-costumers">
-            <h3 class="counter-costumers"><span class="counter-value">1100</span></h3>
-            <p>Nossos<br>cliente</p>
+            <h3 class="counter-h">1100</span></h3>
+            <p class="counter-p">Nossos<br>cliente</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="our-team" class="team-section">
+    <section id="our-team" class="team-section hidden-element">
       <h2 class="title">Nosso time</h2>
       <ul class="team-list">
-        <li class="team-member">
+        <li class="team-list-item">
           <img src="src/ourTeam/teamMember1.png" alt="Perfil Shoo Thar Mien.">
-          <p>Olá, meu nome é<br><strong>Shoo Thar Mien</strong><br>SeniorUX Designer</p>
-          </p>
+          <div class="team-item-description">
+            <p class="team-hello">Olá, meu nome é</p>
+            <p class="team-name">Shoo Thar Mien</p>
+            <p class="team-position">SeniorUX Designer</p>
+          </div>
+
         </li>
 
-        <li class="team-member">
+        <li class="team-list-item">
           <img src="src/ourTeam/teamMember2.png" alt="Perfil Shoo Prat Mhan.">
-          <p>Olá, meu nome é<br><strong>Shoo Prat Mhan</strong><br>Senior IxD</p>
-          </p>
+          <div class="team-item-description">
+            <p class="team-hello">Olá, meu nome é</p>
+            <p class="team-name">Shoo Prat Mhan</p>
+            <p class="team-position">Senior IxD</p>
+          </div>
         </li>
 
-        <li class="team-member">
+        <li class="team-list-item">
           <img src="src/ourTeam/teamMember3.png" alt="Perfil Shoo Yhan Tho.">
-          <p>Olá, meu nome é<br><strong>Shoo Yhan Tho</strong><br>Creative Director</p>
-          </p>
+          <div class="team-item-description">
+            <p class="team-hello">Olá, meu nome é</p>
+            <p class="team-name">Shoo Yhan Tho</p>
+            <p class="team-position">Creative Director</p>
+          </div>
+        </li>
       </ul>
     </section>
 
-    <section id="costumers-says" class="costumers-section">
+    <section id="costumers-says" class="costumers-section hidden-element">
+      <h2 class="title">O que nossos clientes dizem</h2>
       <div class="box-costumers">
-        <div class="box-img-costumer-says">
-          <img src="src/costumersSays/costumer1.png" alt="Perfil cliente Shalima Hayden.">
+        <!--Botão-->
+        <a class="btn-carousel carousel-btn-back" onclick="addSlides(-1)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-left"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+          </svg>
+        </a>
+
+        <div class="box-costumer-content">
+          <div class="costumer-content fade">
+            <div class="box-img-costumers-says">
+              <img class="img-costumer" src="src/costumersSays/costumer1.png" alt="Perfil cliente Shalima Hayden.">
+            </div>
+            <div class="box-text-costumers-says">
+              <p class="costumer-comment">Donec vehicula convallis sodales. Vestibulum ante ipsum primis in faucibus<br>
+                orci luctus et ultrices posuere cubilia curae; Fusce ut porta diam, nec<br>
+                sagittis turpis. Quisque a est et libero lobortis pulvinar in nec felis. Nulla a<br>
+                orci sodales, vulputate justo ac, tincidunt leo. Aliquam at odio ac velit.</p>
+              <p class="costumer-name"><strong>Shalima Hayden</strong></p>
+              <p class="costumer-company">Vendedora Empresa Top</p>
+            </div>
+          </div>
+
+          <div class="costumer-content  fade">
+            <div class="box-img-costumers-says">
+              <img class="img-costumer" src="src/costumersSays/costumer2.png" alt="Perfil cliente Lucas Almeida.">
+            </div>
+            <div class="box-text-costumers-says">
+              <p class="costumer-comment">Donec vehicula convallis sodales. Vestibulum ante ipsum primis in faucibus<br>
+                orci luctus et ultrices posuere cubilia curae; Fusce ut porta diam, nec<br>
+                sagittis turpis. Quisque a est et libero lobortis pulvinar in nec felis. Nulla a<br>
+                orci sodales, vulputate justo ac, tincidunt leo. Aliquam at odio ac velit.</p>
+              <p class="costumer-name"><strong>Lucas Almeida</strong></p>
+              <p class="costumer-company">CEO Empresa Mais ou menos</p>
+            </div>
+          </div>
+
+          <div class="costumer-content fade">
+            <div class="box-img-costumers-says">
+              <img class="img-costumer" src="src/costumersSays/costumer3.png" alt="Perfil cliente Fábio Silva.">
+            </div>
+            <div class="box-text-costumers-says">
+              <p class="costumer-comment">Donec vehicula convallis sodales. Vestibulum ante ipsum primis in faucibus<br>
+                orci luctus et ultrices posuere cubilia curae; Fusce ut porta diam, nec<br>
+                sagittis turpis. Quisque a est et libero lobortis pulvinar in nec felis. Nulla a<br>
+                orci sodales, vulputate justo ac, tincidunt leo. Aliquam at odio ac velit.</p>
+              <p class="costumer-name"><strong>Fábio Silva</strong></p>
+              <p class="costumer-company"> Empresa Daora</p>
+            </div>
+          </div>
+
+          <div class="box-dot">
+            <span class="dot-slide" onclick="currentSlide(1)"></span>
+            <span class="dot-slide" onclick="currentSlide(2)"></span>
+            <span class="dot-slide" onclick="currentSlide(3)"></span>
+          </div>
         </div>
-        <div class="box-text-costumers-says">
-          <h2 class="title">O que nossos clientes dizem</h2>
-          <p>Donec vehicula convallis sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-            cubilia curae; Fusce ut porta diam, nec sagittis turpis. Quisque a est et libero lobortis pulvinar in nec
-            felis. Nulla a orci sodales, vulputate justo ac, tincidunt leo. Aliquam at odio ac velit.</p>
-          <p><strong>Shalima Hayden</strong><br>Vendedora Empresa Top</p>
-        </div>
+
+
+        <!--Botão-->
+        <a class="btn-carousel carousel-btn-foward" onclick="addSlides(1)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+          </svg>
+        </a>
+
       </div>
     </section>
 
-    <section id="contact-us" class="contact-section">
-      <div class="box-form-contact">
+    <section id="contact-us" class="contact-section hidden-element">
+      <div class="box-form-contact hidden-element translateX-element-left">
         <h2 class="title">Entre em contato</h2>
-        <form action="">
-          <label for="firstname-input">Primeiro nome</label>
-          <input id="firstname-input" type="text" placeholder="Seu nome">
-          <label for="surname-input">Sobrenome</label>
-          <input id="surname-input" type="text" placeholder="Seu sobrenome">
-          <label for="email-input">Seu e-mail</label>
-          <input id="email-input" type="email" placeholder="Seu melhor e-mail">
-          <label for="message-input">Mensagem</label>
-          <textarea name="mensage-textarea" id="mensage-textarea" cols="30" rows="10"
-            placeholder="Digite sua mensagem"></textarea>
-          <butto>Enviar</butto>
+        <form class="contact-form" action="#">
+
+          <div class="input-group">
+            <div class="box-input-name">
+              <div class="box-input">
+                <label for="firstname-input">Primeiro nome</label>
+                <input id="firstname-input" type="text" name="firstname" placeholder="Seu nome" required>
+
+              </div>
+
+              <div class="box-input">
+                <label for="surname-input">Sobrenome</label>
+                <input id="surname-input" type="text" name="surname" placeholder="Seu sobrenome" required>
+              </div>
+            </div>
+
+            <div class="box-input">
+              <label for="email-input">Seu e-mail</label>
+              <input id="email-input" type="email" name="email" placeholder="Seu melhor e-mail" required>
+            </div>
+
+            <div class="box-input">
+              <label for="message-input">Mensagem</label>
+              <textarea name="menssage-textarea" name="menssage" id="menssage-textarea" cols="30" rows="10"
+                placeholder="Digite sua mensagem" required></textarea>
+            </div>
+          </div>
+
+          <div class="btn-send"><button><a href="#">Enviar</a></button>
+          </div>
         </form>
+      </div>
+      <div class="box-img-contact hidden-element translateX-element-right">
+        <img class="dot-contact-item" src="src/contact/Dot Ornament.svg" alt="">
+        <img src="src/contact/contactIMG.png" alt="Imagem de duas mulheres conversando.">
+        <div class="location">
+          <div class="loc-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+              viewBox="0 0 16 16">
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+          </div>
+          <p>Carazinho/RS</p>
+        </div>
       </div>
     </section>
   </main>
 
-  <!--Footer-->
-  <footer>
-  </footer>
+  <div class="theme-box">
+    <button id="theme-switch" title="Switch Theme">
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+      class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+      <path
+        d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+      <path
+        d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z" />
+    </svg>
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+        class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+        <path
+          d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+      </svg>
+
+    </button>
+
+
+  </div>
 
 </body>
-<script src="js/main.js"></script>
-
+<script src="js/main.js" defer></script>
 </html>
