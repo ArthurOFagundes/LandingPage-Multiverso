@@ -511,7 +511,7 @@ h1{
 }
 
 
-:is(.darkmode .box-counter-projects, .box-counter-team, .box-counter-costumers){
+:is(.darkmode .box-counter-projects,.darkmode .box-counter-team,.darkmode .box-counter-costumers){
     .counter-h, .counter-p{
         color: var(--second-color);
     }
